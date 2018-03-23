@@ -22,4 +22,4 @@ $ . venv3/bin/activate
     - StatsModels: models
     - scikit-learn: machine learning
     - Keras: deep learning
-    - Gensim: text mining
+    - Gensim: text mining, human language

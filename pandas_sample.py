@@ -12,8 +12,12 @@ d2 = pd.DataFrame(s)   # Create df from series
 print(d2)
 
 d.head()  # first 5 row
-d.describe()  # 
+d.describe()  #
 
 
 xls_df = pd.read_excel('data.xls')
 csv_df = pd.read_excel('data.csv', encoding='utf-8')
+
+# 6*5 random matrix
+import numpy as np
+df = pd.DataFrame(np.random(6, 5))
