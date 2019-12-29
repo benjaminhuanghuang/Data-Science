@@ -14,11 +14,14 @@ $ . venv3/bin/activate
 ```
 
 
-## Libraries
-- Numpy: high speed array
+## Data analysis
+- Data analysis using **numpy, sklearn, pandas** 
+- Scrape data online(yahoo, google) using **requests,beautifulsoup**
+- Read / write data files (xssl, csv, test) using **pandas, openpyxl**
+- Data visualization using **matplotlib,Seaborn**
 - Scipy: matrix operation
-- Matplotlib: data visualization
-- Pandas: data reading analysis (excel, csv, text)
+
+## Machine Learning
 - StatsModels: models
 - scikit-learn: machine learning
 - Keras: deep learning
