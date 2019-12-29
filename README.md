@@ -3,7 +3,7 @@
 
 ## Setup
 ```
-$ virtualenv --system-site-packages -p python3 venv3
+$ python3 -m venv venv3
 
 $ . venv3/bin/activate
 
@@ -15,11 +15,11 @@ $ . venv3/bin/activate
 
 
 ## Libraries
-    - Numpy: high speed array
-    - Scipy: matrix operation
-    - Matplotlib: data visualization
-    - Pandas: data analysis
-    - StatsModels: models
-    - scikit-learn: machine learning
-    - Keras: deep learning
-    - Gensim: text mining, human language
+- Numpy: high speed array
+- Scipy: matrix operation
+- Matplotlib: data visualization
+- Pandas: data reading analysis (excel, csv, text)
+- StatsModels: models
+- scikit-learn: machine learning
+- Keras: deep learning
+- Gensim: text mining, human language
