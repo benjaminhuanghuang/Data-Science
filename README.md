@@ -14,12 +14,21 @@ $ . venv3/bin/activate
 ```
 
 
+## Data scrape
+- requests
+- beautifulsoup
+- pandas
+- openpyxl:  save to excel
+
 ## Data analysis
-- Data analysis using **numpy, sklearn, pandas** 
-- Scrape data online(yahoo, google) using **requests,beautifulsoup**
-- Read / write data files (xssl, csv, test) using **pandas, openpyxl**
-- Data visualization using **matplotlib,Seaborn**
-- Scipy: matrix operation
+- numpy
+- pandas
+- sklearn
+- scipy: matrix operation
+
+## Data visualization
+- matplotlib
+- Seaborn
 
 ## Machine Learning
 - StatsModels: models
