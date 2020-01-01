@@ -20,4 +20,4 @@ df = pd.DataFrame(data=carLoans, columns=colNames)
 df.to_csv(path_or_buf='data/temp.csv', index=False)
 
 # Save to excel
-df.to_excel(excel_writer='data/temp.csv', index=False)
+df.to_excel(excel_writer='data/temp.xlsx', index=False)
