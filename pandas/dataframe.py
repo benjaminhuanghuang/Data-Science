@@ -44,7 +44,7 @@ df = pd.DataFrame(data = carLoans, columns=colNames)
 # print(df)
 
 
-# Approach 3: Python dictionary
+# Approach 3: Python dictionary, use key as column
 carLoans = {'Month': {0: 1, 1: 2, 2: 3, 3: 4, 4: 5},
              'Starting Balance': {0: 34689.96,1: 34205.66,2: 33718.53,3: 33228.55,4: 32735.7},
              'Repayment': {0: 687.23, 1: 687.23, 2: 687.23, 3: 687.23, 4: 687.23},
@@ -57,5 +57,28 @@ carLoans = {'Month': {0: 1, 1: 2, 2: 3, 3: 4, 4: 5},
 
 df = pd.DataFrame(data = carLoans)
 
-print(df)
+#print(df)
 
+# Frome np
+df = pd.DataFrame(np.arange(12).reshape((3,4)))   # 0 to 11
+# print(df)
+
+# Frome dataframe with index and column header
+df = pd.DataFrame(np.arange(12).reshape((3,4)), index=['a', 'c','b'], columns=[1,2,3,8])  
+# print(df)
+# print(df.columns)     
+# print(df.index)
+# print(df.values)     
+# print(df.describe())    # mean, std, min
+# print(df.T) 
+
+
+# creat dataframe, use key as column
+df = pd.DataFrame({2:[3,5,6], 1:[4,8,1], 4:[5,4,1]},index=['a', 'z','f'])
+print(df)
+df = df.sort_index(axis =1)   # sort by column header
+print(df)
+df = df.sort_index(axis =0)   # sort by row header
+print(df)
+df = df.sort_values(by =4)   # sort column 4
+print(df)
