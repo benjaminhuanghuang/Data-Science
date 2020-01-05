@@ -25,3 +25,45 @@ df3['min']=df.min()
 df3['max']=df.max()
 df3['std']=df.std()
 ```
+
+
+## Modify column
+```
+  # 去掉温度后面的C
+  df.loc[:, "column"]= df["column"].str.replace("C", "").astype('int32')
+```
+
+## Add column
+1. 直接赋值
+```
+  # 计算温度差
+  df.loc[:, "diff"]= df["a"]- df["b"]
+```
+
+2. apply(), axis = 1 for columns, axis = 0  for inex
+```
+  def get_type(df):
+    df['col'] > 10:
+      return 'A'
+    return 'B'
+
+  df.loc[:,"type"] = df.apply(get_type, axis=1)
+```
+3. df.assisn()
+```
+  df.assign(
+    y_huashi= = labmda x: x['ywendu'] * 9 / 5 +32,
+    b_huashi= = labmda x: x['bwendu'] * 9 / 5 +32
+  )
+```
+4. 条件赋值
+```
+  df[df["bWendu]-df[''yWendu]>10, 'wencha']= "wencha_da"
+```
+
+
+
+
+
+## Reference
+- https://github.com/peiss/ant-learn-pandas
